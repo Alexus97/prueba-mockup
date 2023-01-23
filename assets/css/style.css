@@ -1,35 +1,49 @@
 .app{
     background: #f1f1f1;
-    display: grid;
     font-family: Arial, Helvetica, sans-serif;
-    grid-template-areas:
-    "encabezado"
-    "contenido"
-    "footer";
-    grid-template-columns: auto;
-    grid-template-rows: 80px 110vh auto;
 }
 
-.encabezado{
+.container__header {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 5rem;
+    left: -22rem;
+}
+.menu__item{
+    display: inline;
+    justify-content: space-between;
+    margin: 0 0 0 55rem;
+    font-weight: bold;
+}
+
+.portada {
+    width: 95%;
     align-items: center;
-    display: flex;
-    grid-area: encabezado;
-    padding: 0 2rem;
-    background: #f1f1f1;
+}
+
+.container__main {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.banner__titulo {
+    position:absolute;
+    left: 36rem;
+    top: 7rem;
 
 }
 
-.contenido {
-    grid-area: contenido;
-    padding: 0.2rem;
-
-}
-
-.rodapie {
-    background: #fdfdfd;
-    color:aqua;
-    grid-area: footer;
-    padding: 1rem;
-    text-align: center;
+.banner__text {
+    position: absolute;
+    left: 36rem;
+    right: 9rem;
+    top: 9rem;
+    padding-right: 2rem;
 
 }
